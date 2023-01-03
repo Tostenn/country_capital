@@ -4,6 +4,7 @@
 # Prérequis
 + `Pyhon`
 - `module`<br>
+
    ![](module.png)
   
 
@@ -14,6 +15,7 @@
 git clone https://github.com/Tostenn/country_capital.git
 cd country_capital
 python main.py -a true
+
 ```
 + ## Linux 
 ```bash
@@ -22,6 +24,7 @@ git clone https://github.com/Tostenn/country_capital.git
 cd country_capital
 chmod +x
 python main.py -e json
+
 ```
 # Syntasx
 + Usage
