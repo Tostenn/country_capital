@@ -11,11 +11,9 @@
 # Installation
 + ## Window
 ```window
-
 git clone https://github.com/Tostenn/country_capital.git
 cd country_capital
 python main.py -a true
-
 ```
 + ## Linux 
 ```bash
