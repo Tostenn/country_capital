@@ -6,8 +6,8 @@
     
     description : ce script peut se diver en 2 partir
 
-        - Recuperer des Donner
-        - Formatage des Donner
+        - Recuperer des Donners
+        - Formatage des Donners
     
 
 '''
@@ -16,14 +16,13 @@
 from json import dump
 from bs4 import BeautifulSoup as be
 from requests import get
-from repertoire import effter
+#  from repertoire import effter ce module n'est pas encore disponible 
 from optparse import OptionParser
 from threading import Thread
 from sys import argv
 from os.path import isfile
 
 
-effter()
 
 # aller chercher les donner
 def req():
