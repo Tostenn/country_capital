@@ -3,11 +3,8 @@
 
 # Prérequis
 + `Pyhon`
-- `module`
-  1. bs4
-  2. resquest
-  3. jons
-  
+- `module`<br>
+   ![](module.png)
   
 
 # Installation
