@@ -43,5 +43,5 @@ main.py -e txt -a true -n enregistrement
 ```
 # **Ce Depot**
 
-> **__Toute amélioration sera la `BIENVENUE`__** <br>
-> **Statut : `terminer`**
+> **__Toute amélioration sera la  `BIENVENUE`__** <br>
+> **Statut :  `terminer`**
