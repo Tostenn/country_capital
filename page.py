@@ -8,6 +8,7 @@ def page(data,name):
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>T_xOx_T</title>
+        <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Tostenn/random_color/main/ico.ico">
         <style>
             *{ margin: 0;padding: 0;text-decoration: none;}
             header {
