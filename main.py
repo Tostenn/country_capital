@@ -21,6 +21,7 @@ from optparse import OptionParser
 from threading import Thread
 from sys import argv
 from os.path import isfile
+from page import page
 
 
 
@@ -78,15 +79,18 @@ def enr(ch = False,format= ''):
         with open(ch,"w") as file:
             dump(data,file)
             print(f'enregistrer dans le fichier \\{ch}')
-    else:
+    elif format == 'txt':
         with open(ch,"w") as file:
             for i,j in data.items(): file.write(f'{i}:{j}\n')
             print(f'enregistrer dans le fichier \\{ch}')
+    else:
+        page(data,ch)
+
 
 name = 'main.py'
 info = f'''{"mode d'emploi":-^55}
     Usage : 
-            {name} -e (json/txt) format d'enregistrement des donner
+            {name} -e (json/txt/html) format d'enregistrement des donner
             {name} -a affichage des donner (true/false)
             {name} -n nom du fichier d'enregistrement par defaut c'est data.json
             {name} -f forcer l'enregistrement dans un fichier exitant
@@ -110,6 +114,7 @@ p.add_option('-f',dest='df',type='string',help='nom du fichier')
 res,null = p.parse_args()
 erg, aff,name = res.erg,res.af,res.name
 force = True if '-f' in argv else False
+
 # dispositif de preparation de l'option -a
 t = Thread(target=addC,args=[True])
 def _a():
@@ -143,7 +148,7 @@ try :
         aff = aff if type(aff) != type(None) else 'false' 
         name = name if type(name) != type(None) else False
 
-        if erg.lower() in ['json','txt']:
+        if erg.lower() in ['html','json','txt']:
 
             if aff.lower() =='true':
 
