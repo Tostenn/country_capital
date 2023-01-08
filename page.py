@@ -8,7 +8,6 @@ def page(data,name):
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>T_xOx_T</title>
-        <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Tostenn/random_color/main/ico.ico">
         <style>
             *{ margin: 0;padding: 0;text-decoration: none;}
             header {
@@ -127,8 +126,7 @@ def page(data,name):
         <article class="all">
     '''
     
-    ch = name+'.html'
-    with open(ch,'w') as f:
+    with open(name,'w') as f:
 
         for i,j in data.items():
             html += f'''\n     <div class="d1">
