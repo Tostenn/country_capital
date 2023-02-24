@@ -20,7 +20,7 @@ python main.py -a true
 
 git clone https://github.com/Tostenn/country_capital.git
 cd country_capital
-chmod +x
+chmod +x *
 python main.py -e json
 
 ```
