@@ -27,17 +27,17 @@ python main.py -e json
 # Syntasx
 + Usage
 ```
-main.py -e (json/txt/html) format d'enregistrement des donner
-main.py -a affichage des donner (true/false)
-main.py -n nom du fichier d'enregistrement par defaut c'est data
-main.py -f forcer l'enregistrement dans un fichier exitant
+python main.py -e (json/txt/html) format d'enregistrement des donner
+python main.py -a affichage des donner (true/false)
+python main.py -n nom du fichier d'enregistrement par defaut c'est data
+python main.py -f forcer l'enregistrement dans un fichier exitant
 ```
 
 + Exemple
 ```
-main.py -e json -n index -f _
-main.py -a false -n data -f _ -e html
-main.py -e txt -a true -n enregistrement
+python main.py -e json -n index -f _
+python main.py -a false -n data -f _ -e html
+python main.py -e txt -a true -n enregistrement
 ```
  + avec le format  `html`<br> ![](html.png)
 # **Ce Depot**
